@@ -20,7 +20,7 @@ int main(void) {
 	}
 
 
-	if(!nat.add_port_mapping("test","192.168.0.101",1236,1234,"TCP")){
+	if(!nat.add_port_mapping("pi","192.168.121.3",1236,1234,"TCP")){
 		printf("add_port_mapping error is %s\n",nat.get_last_error());
 		return -1;
 	}
